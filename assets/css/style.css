@@ -22,7 +22,7 @@ h1 {
 
 .container {
     padding-bottom: 5em;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -129,7 +129,6 @@ main {
 .contact-field input,
 .contact-field textarea {
     width: 100%;
-    margin-top: 0.6em;
     padding: 0.6em 0.9em;
     border: 1px solid #ccc;
     color: #777;
@@ -163,4 +162,76 @@ footer {
     color: #ddd;
     font-size: 0.8em;
     text-align: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    header {
+        font-size: 0.9em;
+    }
+
+    .section-about {
+        font-size: 0.95em;
+    }
+
+    .section__title {
+        font-size: 1.8em;
+    }
+    
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header {
+        font-size: 0.9em;
+    }
+
+    .section-about {
+        font-size: 0.9em;
+    }
+
+    .section__title {
+        font-size: 1.8em;
+    }
+
+    .section-about img {
+        width: 18.4em;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    header {
+        margin-left: -1.1em;
+        height: 9.6em;
+    }
+
+    .header__logo {
+        width: 100%;
+        margin-left: -1.1em;
+        text-align: center;
+    }
+    
+    nav {
+        float: none;
+        padding: 0.6em 0;
+        text-align: center;
+        font-size: 1.1em;
+    }
+
+    .section-about,
+    .section-portfolio,
+    .section-contact {
+        margin: 1em 1em 2em 0;
+        width: 88%;
+    }
+
+    .section-about img {
+        width: 100%;
+        margin-bottom: 1.2em;
+    }
 }
